@@ -1,0 +1,43 @@
+1. Mkdir glenda_garcia
+2. mkdir glenda_garcia/aprendiendo_git
+3. git init 
+4. git config --global user.name y user.email- Para configurar el nombre y correo para el repo.
+5. git status-  Muestra que no hay ningun commit todavia 
+6. nano texto1.txt
+7. git add texto1.txt- Se añade el archivo creado al area de preparacion.
+8. git commit -m["primer commit"]
+9. git log 
+10. -mkdir directorio1
+    - nano directorio1/texto2.txt directorio/texto3.txt
+12. git diff texto1.txt- Este comando muestra las diferencias entre lo que se añadio al crear archivo y se agrego al area de preparacion y lo que se agrego despues pero sin estar en el area de preparacion.
+13. git add *.txt -Para añadir todos los archivos con extension txt al area de preparacion.
+14. git diff nuevamente mostro las diferencias que hay en los tres archivos modificados.
+15. git reset directorio1/texto2.txt - Retira el archivo texto2 del area de preparacion.
+16.git commit -m["segundo commit"]
+17. git status muesra que los archivos 2 y en el directorio1 estan sin seguimiento ("Untracked files")
+    git log muestra los dos commits realizados
+18. gi diff texto1.txt- Este comando mostro las diferencias del mismo archivo modificado y lo que se añadio al area de preparacion.
+19. git add texto1.txt
+20. git git commit -m["tercer commit"]
+21. git log --oneline
+    git checkout 8ff3639 texto1.txt - Regresa el texto1 al estado del primer commit.
+22. git status- Este comando mostro un detached HEAD 
+    git log - Solo muestra el historial del primer commit hecho
+23. git branch aj - Se crea una rama temporal
+    git checkout aj
+    git branch -b master aj Se mueve el estado de la rama "master" a la rama "aj"
+    git checkout master - Al moverse de rama nuevamente el HEAD vuelve a su posicion normal.
+    git branch -d aj Se elimina la rama temporal en el detached HEAD 
+     
+24. git branch rama2
+25. git checkout rama2
+26. mkdir directorio2
+    nano directorio2/texto4.txt
+27. git add texto4.txt
+     git git commit -m["cuarto commit"]
+28. git log- mostro el historial del primer commit en la rama "master" y el que se ha creado en la "rama2"
+29. git checkout master 
+30. git log - solo muestra el primer commit
+31. git merge rama2
+ 
+ 
